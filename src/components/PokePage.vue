@@ -63,6 +63,7 @@ export default {
   data(){ 
 
     var message = false;
+
     return{
             pokeArray:[]
           }
@@ -73,12 +74,12 @@ export default {
       
         this.message=true;
         axios
-        .get("https://api.pikaserve.xyz/pokemon/all/",{
-        })
+        
+        .get("https://api.pikaserve.xyz/pokemon/all/",{})
         .then((response)=>{
 
           this.pokeArray=(response.data.slice(0,151))
-          console.log(this.pokeArray)
+          
 
         })
         .catch((errors)=>{
