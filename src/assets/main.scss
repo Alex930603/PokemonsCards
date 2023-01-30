@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P';
+}
+
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:3rem;  
+}
+
+.pokemon-container{
+  background-color: rgb(220, 215, 214);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 3px solid black;
+  border-radius: 10px;
+    &_single-pokemon{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8rem;
+      border: 3px solid black;
+      height:35rem;
+      width:30rem;
+      
+      cursor: pointer;
+
+
+      &--pokemon-id{
+        height:30%;
+        width: 100%;
+        background-color: rgb(159, 169, 201);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 5px solid #0abde9;
+        border-radius: 5px;
+        padding:0.7rem
+      }
+
+      &--pic-container{
+          
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:40%;
+          .pokemon-pic{
+            width:7rem;
+          }
+      }
+
+    &--description{
+      background-color: rgb(159, 169, 201);
+      height:8rem;
+      padding:0.5rem 0.5rem;
+      font-size: 0.4rem;
+      border-top:5px solid #0abde9;
+      border-radius: 5px;
+      height:30%;
+      line-height: 1.3rem;
+    }
+    &--moves{
+      background-color: rgb(159, 169, 201);
+      height:8rem;
+      padding:0.5rem 0.5rem;
+      font-size: 0.4rem;
+      border-top:5px solid #0abde9;
+      border-radius: 5px;
+      height:30%;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      padding-left: 2rem;
+
+        h2{
+          font-size: 0.8rem;
+        }
+    }
+  }
+}
+
+button{
+  height:30px;
+  width:100px;
+  margin-bottom: 50px;
+}
+
+.utility-info{
+  margin-bottom: 50px;
+ 
+}
